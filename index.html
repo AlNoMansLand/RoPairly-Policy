@@ -4,49 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RoPairly</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111217;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 56px 20px;
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: 36px;
-    }
-
-    p {
-      color: #d4d4d8;
-    }
-
-    a {
-      color: #93c5fd;
-    }
-
-    nav {
-      display: flex;
-      gap: 16px;
-      margin-top: 28px;
-    }
-  </style>
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
-  <main>
-    <h1>RoPairly</h1>
-    <p>Save and share Roblox games with your linked partner.</p>
-    <nav>
-      <a href="privacy.html">Privacy Policy</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">RoPairly</a>
+    <nav aria-label="Site navigation">
+      <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy">
+      <p class="eyebrow">Chrome extension for Roblox</p>
+      <h1>Save and share Roblox games with your linked partner.</h1>
+      <p class="lead">
+        RoPairly creates a private shared space for two Roblox users to collect games,
+        see who saved what, and keep a lightweight activity history together.
+      </p>
+      <div class="actions">
+        <a class="button" href="privacy.html">View Privacy Policy</a>
+        <a class="button secondary" href="support.html">Get Support</a>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="RoPairly features">
+      <h2>What RoPairly Includes</h2>
+      <ul class="feature-list">
+        <li>
+          <strong>Partner linking</strong>
+          <span>Pair with one trusted Roblox account using verification and link codes.</span>
+        </li>
+        <li>
+          <strong>Shared game saves</strong>
+          <span>Save Roblox games into one shared Our Space list.</span>
+        </li>
+        <li>
+          <strong>Activity history</strong>
+          <span>See recent games added or removed from the shared list.</span>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
